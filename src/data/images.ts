@@ -1,0 +1,13 @@
+/**
+ * Remote images exported by Google Stitch.
+ * Tip: download them into /public/images and point these constants to "/images/<name>.jpg"
+ * so the site does not depend on Stitch-hosted URLs.
+ */
+export const IMAGES = {
+  logo: "https://lh3.googleusercontent.com/aida/AEtjO1XVNhRgIiHuFgy6bg2soxlr4oTJc06K7J3BPBUuXPuqnf_nhZ-K0LGYSXA04p4dPVz3OYOTIvH-LIi_83lq9t8zkTDEIzzhtebel7Wfp8rEnAGMxh1DbhSsaOQDTHkJwf_osh-Z_sWm7sq2lHgq8ICsSWloUJVmmMtvY5whkwE-0tOejWHWXlC_3NXBLrGcbsB89ew_EMHPz2fSShqtSEje4rzCF18cnK8nIew1sfbujg09uDP1ucbZOxQ",
+  hero: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQkOhAgLhl1SOESwmo2KC2f3KXa1cwgqNlz_HxZ5AnojkFSbASjlQ3RqLaEA8mXFwv993EU6Nc9vFyWkNUNKlQwZkmemeEYNQJf8qD2FgScYRANonUv4SKDwoeLza2QTrppGvzvZR-mcw2KDS29Xgw1NAl-9pYqrkuDm-P4zKZ_IWCtR9Hy_i2rQ5MoJdXPfOwWxuNrQI9hxPaVuC_sitonTkaNemDCHNsv34k-f3RGyF-P5cse-AtCg",
+  notes: "https://lh3.googleusercontent.com/aida-public/AB6AXuB9BB5XmtRn64BZqU_xstYd8F_9RXwz3shT-jLKxM5CWVk9sc-eaAGIPWD_QmccQaxaUQZghf9dizpX1ivjfiJhaPr03B_H9KEpTWKgD7e917PVt41NN8iUtAgz6vl8F8Aa03GQ88hsqO-hF623GQSEHi0bjfR9AHSQwsBSxtBJb5Rlq-_toy_9iYA2kV32JoHVrENjn1UpYOTKCPdy5kAFrxfk8K4pHTm-w26rF-BV5iabvdyxQp2r_g",
+  projectLanding: "https://lh3.googleusercontent.com/aida-public/AB6AXuD5EL1nEy-wVM-aoaLAzGZW4NWAGKJbH44gGnKsgxzmcwU7vkL7qv32MB6qJbyVUMUNkqTBm8Mr5tAMp5f6tO-otPc_F8-1JipS8nkSL150ggCXJ_G5cfUCF9ZuLXSqIjpyp4l_uFPLzpUbHn03QuWaBD1EkHxwUcmB65Kg3K4i3JOl5yUbJ4wi1M9lOXlAeZ8XV7gJl4v_j--KkMujsIEB402iapAi-HN9rJrJRS2mlhlGMtSIQbK8ZA",
+  projectBotanical: "https://lh3.googleusercontent.com/aida-public/AB6AXuDDO5JXCnhGkh6a90pkxe1cHPJAwYCGLynzkzuzkECmDE7CcLbvuaZvINaUNmHNiU0wZc0toIBJWujLCPytJ4n7CQGGavduFpP9y1byo2fzZ1jEbPyzO89gJnWV0qDZILlKg6EX7Jr6xzhEl6uZOoi6jTt0u_YWR-ZzJ2B6oLEoOTz28DOO1ZdN4S3GqQzAuj7Hwjh-PxpXhYvmsvs8ToChtFuPWu3miIm9tir7oX4Olysg133bZ8hFhA",
+  projectStoryboard: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFfC4XLiYysz6bhDkYB_ZdR4J3-wHfIiWcENRj19QnH7OQzuMbAzIWNBS1qBMUmo3zPQzKccneSCUtw2O8_L9Pg-igVx5bbdOjWaK5oXJLHlDfBtIm7gZJ-nA9LH01t9CbZ9mfM1nmZnB881eT2OeXFFKc90YUGKzq_zUyWiNuKK3Jq-HF1ZhFAwiRV9vnb7bD7KnZ05azfZUMxRT9Cnx-GcSTYl4rQFURyD_esHohmguK48CXt8ZPTg"
+} as const;

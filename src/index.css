@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* fixed header offset for anchor links */
+  }
+
+  body {
+    @apply bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container;
+    overscroll-behavior: none;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary/60 ring-offset-2 ring-offset-surface;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Translucent ivory panels (Organic Editorial Glassmorphism) */
+  .panel {
+    @apply rounded-3xl bg-surface-container-lowest/85 p-6 shadow-md shadow-on-surface/5 backdrop-blur-md sm:p-8;
+  }
+  .panel-lg {
+    @apply rounded-3xl bg-surface-container-lowest/80 p-6 shadow-lg shadow-on-surface/5 backdrop-blur-md sm:p-10;
+  }
+
+  .section-label {
+    @apply font-section-title text-section-title uppercase tracking-widest text-secondary;
+  }
+
+  /* Pills & buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 font-label-md text-label-md text-on-primary shadow-md shadow-primary/25 transition-all hover:bg-primary-container hover:text-on-primary-container;
+  }
+  .btn-soft {
+    @apply inline-flex items-center gap-2 rounded-full bg-secondary-container px-7 py-3 font-label-md text-label-md text-on-secondary-container transition-all hover:bg-surface-container-high;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full px-3 py-1 font-label-sm text-label-sm;
+  }
+
+  /* Inputs */
+  .field {
+    @apply w-full rounded-2xl bg-surface-container-low px-4 py-2.5 font-body-sm text-body-sm text-on-surface transition-all placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/40;
+  }
+}
+
+/* Material Symbols defaults */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+/* One orchestrated moment: the hero portrait settles in on first load */
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.settle {
+  animation: settle 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .settle {
+    animation: none;
+  }
+}
